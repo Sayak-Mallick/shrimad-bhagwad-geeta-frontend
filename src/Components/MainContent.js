@@ -32,14 +32,13 @@ const MainContent = () => {
           style={{
             fontFamily: "Samarkan Normal",
             fontWeight: "bold",
-            fontSize: "55px",
           }}
           className="question"
         >
-          What Troubles you my Friend ???
+          What Troubles you my Friend ?
         </h1>
         <p className="tagline">Find solace in the wisdom of Shree Krishna</p>
-        <p style={{ top: "465px", left: "550px" }} className="counter">
+        <p className="counter">
           5,85,030+ Updesh generated so far
         </p>
 
@@ -71,7 +70,7 @@ const MainContent = () => {
           />
 
           <div className="chapter">
-            <p className="chapter-name">Chapter:{response.chapter}  Verse:{response.verse}</p>
+            <p className="chapter-name">Chapter:{response.chapter} ,  Verse:{response.verse}</p>
             {/* <p className="chapter-name"></p> */}
             <p className="chapter-description">
               Original Shloka:{response.shlokaText}

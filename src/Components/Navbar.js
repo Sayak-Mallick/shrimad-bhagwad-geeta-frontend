@@ -10,7 +10,7 @@ function Navbar() {
 			<nav >
 				<a href="/#">Home</a>
 				<a href="/#">About Us</a>
-				<button className="read-btn"> Read The Gita</button>	
+				<button className="read-btn"> <p style={{textAlign: "center"}}>Read The Gita</p> </button>	
 			</nav>
 		</header>
 		

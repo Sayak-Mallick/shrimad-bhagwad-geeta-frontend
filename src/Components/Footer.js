@@ -1,39 +1,61 @@
 import React from 'react'
 import "../Styles/main.css";
-
+import logo from "../images/primary-logo.svg"
 import { AiFillFacebook,AiOutlineTwitter,AiFillLinkedin,AiFillInstagram } from 'react-icons/ai';
 
 
 const Footer = () => {
   return (
-   <footer className='footer'>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-4">
-        <h3>About Us</h3>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+     
+      <div className="footer-section">
+        <footer className="section bg-footer">
+          <div className="container-fluid">
+            <div className="text-center py-3">
+              <img src="https://distancecoding.agency/assets/images/logo-light.png" className="footer_logo" alt="" />
+            </div>
+            <div className="row justify-content-center align-items-center">
+              <div className="col-12">
+                <div className="links">
+                  <a href="https://www.distancecoding.agency">
+                    https://www.distancecoding.agency
+                  </a>
+                  <p>
+                    <i className="fas fa-mobile-alt"></i> +1 (404) 999-0803
+                  </p>
+                  <p>
+                    <i className="fab fa-whatsapp"></i> +91 8777062003
+                  </p>
+                </div>
+              </div>
+              <div className="contact-us">
+                <a href="mailto:contactus@distancecoding.agency">
+                  contactus@distancecoding.agency
+                </a>
+              </div>
+            </div>
+
+            {/* <!-- End row --> */}
+          </div>
+          {/* <!-- End container --> */}
+        </footer>
+        {/* <!-- end footer --> */}
+
+        {/* <!-- FOOTER-ALT --> */}
+        <div className="footer-alt pt-4 pb-4">
+          <div className="container">
+            <div className="row">
+              <div className="col-lg-12">
+                <div className="text-center">
+                  <p className="mb-0 fs-15 text-white copyright-text">
+                    © 2023 Distance Coding
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="col-md-4">
-        <h3>Contact Us</h3>
-        <ul class="list-unstyled">
-          <li>1234 Main St.</li>
-          <li>Anytown, USA 12345</li>
-          <li>Phone: 123-456-7890</li>
-          <li>Email: info@example.com</li>
-        </ul>
-      </div>
-      <div class="col-md-4">
-        <h3>Follow Us</h3>
-        <ul class="list-inline social-icons">
-          <li><a href="#"><i class="fab fa-facebook"> <AiFillFacebook /></i></a></li>
-          <li><a href="#"><i class="fab fa-twitter"> <AiOutlineTwitter /> </i></a></li>
-          <li><a href="#"><i class="fab fa-linkedin"> <AiFillLinkedin /> </i></a></li>
-          <li><a href="#"><i class="fab fa-instagram"> <AiFillInstagram /> </i></a></li>
-        </ul>
-      </div>
-    </div>
-  </div>
-</footer>
+    
   )
 }
 
