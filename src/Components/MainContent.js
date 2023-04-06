@@ -5,10 +5,9 @@ import slokaleft from "../images/sloka-left.png";
 import slokaright from "../images/sloka-right.png";
 import ServerBanner from "../images/Server Banner Display.png";
 import Slider from "./Slider";
-import VideoPlayer from "./VideoPlayer";
 
 const MainContent = () => {
-  const [response, setResponse] = useState({});
+  const [response, setResponse] = useState([]);
 
   const handleSubmit = (event) => {
     event.preventDefault();
@@ -38,9 +37,7 @@ const MainContent = () => {
           What Troubles you my Friend ?
         </h1>
         <p className="tagline">Find solace in the wisdom of Shree Krishna</p>
-        <p className="counter">
-          5,85,030+ Updesh generated so far
-        </p>
+        <p className="counter">5,85,030+ Updesh generated so far</p>
 
         <img src={slokaleft} className="sloka-left" alt="" />
 
@@ -70,7 +67,9 @@ const MainContent = () => {
           />
 
           <div className="chapter">
-            <p className="chapter-name">Chapter:{response.chapter} ,  Verse:{response.verse}</p>
+            <p className="chapter-name">
+              Chapter:{response.chapter} , Verse:{response.verse}
+            </p>
             {/* <p className="chapter-name"></p> */}
             <p className="chapter-description">
               Original Shloka:{response.shlokaText}
@@ -118,7 +117,7 @@ const MainContent = () => {
             fontWeight: "bold",
             fontSize: "35px",
             top: "-90px",
-            position:" absolute"
+            position: " absolute",
           }}
           className="videos-heading"
         >

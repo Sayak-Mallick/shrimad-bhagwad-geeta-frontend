@@ -1,11 +1,15 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "./Slider.css";
 import BtnSlider from "./BtnSlider";
-import VideoPlayer from "./VideoPlayer";
+import ReactPlayer from "react-player/youtube";
+import { Row, Col, Image } from "react-bootstrap";
 
 export default function Slider({ videos }) {
-  //   console.log(videos);
   const [slideIndex, setSlideIndex] = useState(1);
+  const [currentUrl, setCurrentUrl] = useState(
+    videos?.length > 0 ? videos[0]?.url : null
+  );
+  const [isPlaying, setIsPlaying] = useState(false);
 
   const nextSlide = () => {
     if (slideIndex !== videos?.length) {
@@ -27,26 +31,60 @@ export default function Slider({ videos }) {
     setSlideIndex(index);
   };
 
+  useEffect(() => {
+    if (videos && slideIndex > 0 && slideIndex <= videos.length) {
+      setCurrentUrl(videos[slideIndex - 1]?.url);
+    }
+  }, [slideIndex, videos]);
+
+  const handlePlay = () => {
+    setIsPlaying(true);
+  };
+
+  const handlePause = () => {
+    setIsPlaying(false);
+  };
+
+  useEffect(() => {
+    let interval;
+    if (!isPlaying) {
+      interval = setInterval(() => {
+        nextSlide();
+      }, 5000);
+    }
+    return () => clearInterval(interval);
+  }, [slideIndex, isPlaying]);
+
   return (
     <div className="container-slider">
+      {/* <ReactPlayer url={currentUrl} onPlay={handlePlay} onPause={handlePause} /> */}
+      <div className="player-wrapper">
+        <ReactPlayer
+          url={currentUrl}
+          className="react-player"
+          // playing
+          width="100%"
+          height="100%"
+          onPlay={handlePlay}
+          onPause={handlePause}
+        />
+      </div>
+
       {videos?.map((obj, index) => {
         return (
           <div
             key={obj.id}
             className={slideIndex === index + 1 ? "slide active-anim" : "slide"}
-          >
-            {/* <img src={process.env.PUBLIC_URL + `/Imgs/img${index + 1}.jpg`} /> */}
-            <VideoPlayer videoUrl={obj.url} />
-            {/* <img src={obj.thumbnail} alt="" srcset="" /> */}
-          </div>
+          ></div>
         );
       })}
       <BtnSlider moveSlide={nextSlide} direction={"next"} />
       <BtnSlider moveSlide={prevSlide} direction={"prev"} />
 
       <div className="container-dots">
-        {Array.from({ length: 5 }).map((item, index) => (
+        {Array.from({ length: videos?.length }).map((item, index) => (
           <div
+            key={index}
             onClick={() => moveDot(index + 1)}
             className={slideIndex === index + 1 ? "dot active" : "dot"}
           ></div>
