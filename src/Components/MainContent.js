@@ -71,8 +71,8 @@ const MainContent = () => {
           />
 
           <div className="chapter">
-            <p className="chapter-name">Chapter:{response.chapter}</p>
-            <p className="chapter-name">Verse:{response.verse}</p>
+            <p className="chapter-name">Chapter:{response.chapter}  Verse:{response.verse}</p>
+            {/* <p className="chapter-name"></p> */}
             <p className="chapter-description">
               Original Shloka:{response.shlokaText}
             </p>
