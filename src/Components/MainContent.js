@@ -53,7 +53,7 @@ const MainContent = () => {
           <input
             type="text"
             className="prompt-container"
-            placeholder="Enter The Question"
+            placeholder="Enter The Question [Eg :- What is Inner peace ? ]"
             name="question"
           />
           <button className="prompt-submit" type="submit">
@@ -113,6 +113,18 @@ const MainContent = () => {
         <img src={ServerBanner} className="server-banner" alt="server Banner" />
       </section>
       <section className="slider">
+        <h4
+          style={{
+            fontFamily: "Samarkan Normal",
+            fontWeight: "bold",
+            fontSize: "35px",
+            top: "-90px",
+            position:" absolute"
+          }}
+          className="videos-heading"
+        >
+          Know More From Popular Videos
+        </h4>
         <Slider videos={response.videosRelatedToRelatedChapters} />
       </section>
     </>
