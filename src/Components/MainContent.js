@@ -95,16 +95,38 @@ const MainContent = () => {
 
         <ul>
           <li>
-            Discover the world of bhagwad gita ai and connect with fellow
-            seekers on our discord community. Share insights, explore new
-            perspectives, and learn from each other
+            <b>Chatting –</b> You get to interact with likeminded people. Chat with them and share ideas, images,
+information, knowledge and be a part of a community.
           </li>
 
           <li>
-            Discover the world of bhagwad gita ai and connect with fellow
-            seekers on our discord community. Share insights, explore new
-            perspectives, and learn from each other
+          <b> Free Music Channel –</b>  You can access our music library of Bhajans and Kirtans as per your
+preferences and listen as well as share.
           </li>
+
+          <li>
+        <b>Free Personalized Image Builder –</b>     We connect you the most popular Image Buliding AI for free.
+You can connect to this and just type out the kind of image you want and the AI tool will generate
+an unique image for you. You can download this image for free. Please follow our instruction video
+for easy access to this tool.
+          </li>
+
+<li>
+
+           <b> Notice board –</b> We will post events, competitions, donation drives, seva opportunities and
+important information for community members in this section.
+
+</li>
+
+<li>
+<b>Hindu Calender –</b> Here you can see also the important dates and their significance.
+</li>
+
+
+<li>
+   <b> Exchange Counter –</b> Coming Soon ! – Here you can trade/exchange credit points earned and NFTs
+</li>
+
         </ul>
 
         <button className="join-now">Join Now</button>
