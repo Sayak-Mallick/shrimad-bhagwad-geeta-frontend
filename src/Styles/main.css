@@ -39,6 +39,13 @@ header {
 	color: var(--textColor);
 }
 
+.logo-container .logo {
+	position: absolute;
+	top: 26px;
+	width: 180px;
+	left: 586px;
+}
+
 nav a {
 	margin: 0 1rem;
 	color: var(--textColor);
@@ -53,16 +60,19 @@ nav a:hover {
 }
 
 .read-btn {
-	position: relative;
-	padding-left: 15px;
-	font-weight: bold;
-	color: var(--textColor);
-	width: 122px;
-	height: 24px;
-	background: #EE7A46;
-	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
-	border: 1px solid white;
-	border-radius: 30px;
+		position: relative;
+		top: -140px;
+		padding-left: 15px;
+		font-weight: bold;
+		color: var(--textColor);
+		width: 130px;
+		height: 40px;
+		background: #EE7A46;
+		border: none;
+		box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.05);
+		border-radius: 3px;
+		text-align: center;
+		cursor: pointer;
 }
 
 .read-btn:hover {

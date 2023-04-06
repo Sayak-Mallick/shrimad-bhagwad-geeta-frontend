@@ -1,36 +1,17 @@
-import { useRef } from "react";
-import { FaBars, FaTimes } from "react-icons/fa";
 import "../Styles/main.css";
-
+import logo from "../images/primary-logo.svg"
 function Navbar() {
-	const navRef = useRef();
-
-	const showNavbar = () => {
-		navRef.current.classList.toggle(
-			"responsive_nav"
-		);
-	};
-
+	
 	return (
 		<header>
-			<h3 style={{position:" relative",top: "-140px",}}>Bhagwadgita Ai</h3>
-			<nav ref={navRef}>
+			<div className="logo-container">
+				<img src={logo} className="logo" alt="" />
+			</div>
+			<nav >
 				<a href="/#">Home</a>
 				<a href="/#">About Us</a>
-				<a href="#" className="read-btn">Read The Gita</a>
-				<button
-					className="nav-btn nav-close-btn"
-					style={{display: "none"}}
-					onClick={showNavbar}>
-					<FaTimes />
-				</button>
-				
+				<button className="read-btn"> Read The Gita</button>	
 			</nav>
-			<button
-				className="nav-btn" style={{ position: "relative",top: "-130px",left: "0px"}}
-				onClick={showNavbar}>
-				<FaBars />
-			</button>
 		</header>
 		
 	);
