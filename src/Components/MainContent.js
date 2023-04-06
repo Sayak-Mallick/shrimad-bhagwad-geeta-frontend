@@ -5,7 +5,7 @@ import slokaleft from "../images/sloka-left.png";
 import slokaright from "../images/sloka-right.png";
 import ServerBanner from "../images/Server Banner Display.png";
 import Slider from './Slider';
-
+import "../Styles/main.css";
 
 
 const MainContent = () => {
@@ -13,7 +13,7 @@ const MainContent = () => {
     <>
         <section className="main-content">
 			<h1 style={{fontFamily:'Samarkan Normal', fontWeight:'bold', fontSize: "55px"}} className='question'>What Troubles you my Friend ???</h1>
-            <p className='tagline'>Find solace in the wisdom of Shree Krishna</p>
+            <p className='tagline'>Find solace in the wisdom of Bhagwad Gita</p>
             <p style={{top: "465px",left: "550px"}} className='counter'>5,85,030+ Updesh generated so far</p>
            
             <img src={slokaleft} className='sloka-left' alt="" />
