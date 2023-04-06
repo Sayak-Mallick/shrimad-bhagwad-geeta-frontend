@@ -4,14 +4,8 @@ import mandala from "../images/Mandala.svg";
 import slokaleft from "../images/sloka-left.png";
 import slokaright from "../images/sloka-right.png";
 import ServerBanner from "../images/Server Banner Display.png";
-<<<<<<< HEAD
-import Slider from './Slider';
-import "../Styles/main.css";
-
-=======
 import Slider from "./Slider";
 import VideoPlayer from "./VideoPlayer";
->>>>>>> sougata
 
 const MainContent = () => {
   const [response, setResponse] = useState({});
@@ -33,14 +27,6 @@ const MainContent = () => {
   //   console.log(response.videosRelatedToRelatedChapters[0].url);
   return (
     <>
-<<<<<<< HEAD
-        <section className="main-content">
-			<h1 style={{fontFamily:'Samarkan Normal', fontWeight:'bold', fontSize: "55px"}} className='question'>What Troubles you my Friend ???</h1>
-            <p className='tagline'>Find solace in the wisdom of Bhagwad Gita</p>
-            <p style={{top: "465px",left: "550px"}} className='counter'>5,85,030+ Updesh generated so far</p>
-           
-            <img src={slokaleft} className='sloka-left' alt="" />
-=======
       <section className="main-content">
         <h1
           style={{
@@ -56,7 +42,6 @@ const MainContent = () => {
         <p style={{ top: "465px", left: "550px" }} className="counter">
           5,85,030+ Updesh generated so far
         </p>
->>>>>>> sougata
 
         <img src={slokaleft} className="sloka-left" alt="" />
 
