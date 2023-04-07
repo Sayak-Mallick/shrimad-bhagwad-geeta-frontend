@@ -8,8 +8,8 @@ function Navbar() {
 				<img src={logo} className="logo" alt="" />
 			</div>
 			<nav >
-				<a href="/#">Home</a>
-				<a href="/#">About Us</a>
+				<a href="/">Home</a>
+				<a href="/about">About Us</a>
 				<button className="read-btn"> <p style={{textAlign: "center"}}>Read The Gita</p> </button>	
 			</nav>
 		</header>
