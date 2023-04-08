@@ -65,7 +65,7 @@ nav a:hover {
 	top: -140px;
 	background: #F1581B;
 	width: 160px;
-	height: 50px;
+	height: 35px;
 	box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 	border-radius: 6px;
 	font-weight: 700;
@@ -372,7 +372,7 @@ a {
 
 
 ::placeholder {
-	font-size: 12px;
+	color: #AA5656;
 }
 
 .links {
