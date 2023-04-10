@@ -18,26 +18,6 @@ const About = () => {
           <img src={slokaright} className="sloka-right" alt="" />
 
         <div className='about-content'>
-            <h1>Distance Coding</h1>
-            <p>We are a software engineering company that creates scalable, high-performance digital solutions to
-      solve business challenges of our clients who range from new startups to aspiring unicorns and
-      established leaders in the tech space. We have been in the technology based development business
-      for over 13 years. We are also building our own products using AI &amp; ML. At Distance Coding we
-      strive to provide our clients with effective solutions which are customized with quality innovation.
-      We are sensitive to the impact of cost to business and build &amp; deliver our services accordingly.</p>
-      
-      <h1>Mission</h1>
-            <p>Our mission is to improve the efficiency and effectiveness of our customers. We achieve this by
-being sensitive to the customer’s needs and by providing specialist subject matter expertise and
-best-in-class information technology solutions. We remain agile and innovative in our services and
-products to ensure customization.</p>
-
-<h1>Vision</h1>
-            <p>Our vision is to create value for our clients, people, shareholders and partners. Our core value of
-shared success will guide us to become a leading service provider in the information technology
-space.</p>
-
-<h1>OM SHANTI OM</h1>
             <p>We are all first and foremost seekers of meaning before we are seekers of material things. Because
 of this, mental capital should always be a society&#39;s first investment. We are all living in a super fast
 society where it is very easy to lose one ’s self. This lack of purpose affects young people in
@@ -66,6 +46,26 @@ Om Shanti Om brings to you an AI Avatar of Lord Krishna, engineered using Artifi
 who instantly presents to you answers that are extracted from the holy texts of the Bhagawat Gita
 related to the question that you ask. It provides you with the relevant Chapters and Slokas
 (Verses), their translation in your preferred language and relevant videos</p>
+
+
+            <h1>Distance Coding</h1>
+            <p>We are a software engineering company that creates scalable, high-performance digital solutions to
+      solve business challenges of our clients who range from new startups to aspiring unicorns and
+      established leaders in the tech space. We have been in the technology based development business
+      for over 13 years. We are also building our own products using AI &amp; ML. At Distance Coding we
+      strive to provide our clients with effective solutions which are customized with quality innovation.
+      We are sensitive to the impact of cost to business and build &amp; deliver our services accordingly.</p>
+      
+      <h1>Mission</h1>
+            <p>Our mission is to improve the efficiency and effectiveness of our customers. We achieve this by
+being sensitive to the customer’s needs and by providing specialist subject matter expertise and
+best-in-class information technology solutions. We remain agile and innovative in our services and
+products to ensure customization.</p>
+
+<h1>Vision</h1>
+            <p>Our vision is to create value for our clients, people, shareholders and partners. Our core value of
+shared success will guide us to become a leading service provider in the information technology
+space.</p>
 
 
 
